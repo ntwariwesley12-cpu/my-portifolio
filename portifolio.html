@@ -3,220 +3,256 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Wesley Ntwari | Frontend Developer</title>
 
-<style>
-/* Put all CSS here */
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#0f172a;
-    color:white;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-header{
-    padding:20px 10%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:#111827;
-}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-.logo{
-    font-size:28px;
-    font-weight:bold;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
-}
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:50px 10%;
-}
-
-.hero-content{
-    display:flex;
-    align-items:center;
-    gap:60px;
-    flex-wrap:wrap;
-}
-
-.profile-pic{
-    width:350px;
-    height:350px;
-    object-fit:cover;
-    border-radius:20px;
-    border:4px solid #3b82f6;
-}
-
-.btn{
-    background:#2563eb;
-    color:white;
-    text-decoration:none;
-    padding:12px 24px;
-    border-radius:10px;
-    display:inline-block;
-    margin-top:15px;
-}
-
-section{
-    padding:80px 10%;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:#1e293b;
-    padding:25px;
-    border-radius:15px;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    background:#111827;
-}
-</style>
-
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header>
-    <div class="logo">Wesley.</div>
+<div class="container nav-container">
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<h2 class="logo">Wesley.</h2>
+
+<nav id="nav">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="menu-btn" id="menu-btn">
+☰
+</div>
+
+</div>
 </header>
 
-<section class="hero">
+<section id="home" class="hero">
 
-    <div class="hero-content">
+<div class="container hero-content">
 
-        <div>
-            <h1>Wesley Ntwari</h1>
+<div class="hero-text">
 
-            <h2>Frontend Web Developer</h2>
+<span class="badge">
+Available for Opportunities
+</span>
 
-            <p>
-                I create responsive, modern and professional websites
-                using HTML, CSS and JavaScript.
-            </p>
+<h1>
+Wesley Ntwari
+</h1>
 
-            <a href="#projects" class="btn">
-                View My Work
-            </a>
-        </div>
+<h2 id="typing"></h2>
 
-        <img src="Screenshot 2026-04-10 213523.png"
-             alt="Wesley Ntwari"
-             class="profile-pic">
+<p>
+Passionate Frontend Developer from Rwanda focused on creating
+beautiful, responsive and user-friendly digital experiences.
+</p>
 
-    </div>
+<div class="hero-buttons">
+<a href="#projects" class="btn primary-btn">
+View Projects
+</a>
 
-</section>
+<a href="#contact" class="btn secondary-btn">
+Contact Me
+</a>
+</div>
 
-<section id="about">
+</div>
 
-    <h2>About Me</h2>
+<div class="hero-image">
+<img src="Screenshot 2026-04-10 213523.png" alt="Wesley Ntwari">
+</div>
 
-    <p>
-        Passionate Frontend Developer from Rwanda focused on building
-        clean, responsive and user-friendly web applications.
-    </p>
-
-</section>
-
-<section id="skills">
-
-    <h2>Skills</h2>
-
-    <div class="cards">
-
-        <div class="card">HTML5</div>
-
-        <div class="card">CSS3</div>
-
-        <div class="card">JavaScript</div>
-
-        <div class="card">Git & GitHub</div>
-
-        <div class="card">Figma</div>
-
-        <div class="card">Responsive Design</div>
-
-    </div>
+</div>
 
 </section>
 
-<section id="projects">
+<section class="stats">
 
-    <h2>Featured Projects</h2>
+<div class="container stats-grid">
 
-    <div class="cards">
+<div class="stat-card">
+<h2>10+</h2>
+<p>Projects Built</p>
+</div>
 
-        <div class="card">
-            <h3>Jibu Delivery Website</h3>
-            <p>
-                Responsive business website for product ordering.
-            </p>
-        </div>
+<div class="stat-card">
+<h2>5+</h2>
+<p>Technologies Learned</p>
+</div>
 
-        <div class="card">
-            <h3>Museum Puzzle Game</h3>
-            <p>
-                Educational game developed to teach history through interaction.
-            </p>
-        </div>
+<div class="stat-card">
+<h2>100%</h2>
+<p>Dedication</p>
+</div>
 
-        <div class="card">
-            <h3>Student MIS Dashboard</h3>
-            <p>
-                School management interface with modern design.
-            </p>
-        </div>
-
-    </div>
+</div>
 
 </section>
 
-<section id="contact">
+<section id="about" class="section">
 
-    <h2>Contact Me</h2>
+<div class="container">
 
-    <p>Email: ntwariwesley12@gmail.com</p>
+<h2 class="section-title">About Me</h2>
 
-    <p>Location: Kigali, Rwanda</p>
+<p class="about-text">
+I'm Wesley Ntwari, a Frontend Developer passionate about building
+modern websites and web applications. I enjoy turning ideas into
+beautiful and responsive user experiences using modern web
+technologies.
+</p>
 
-    <a href="https://github.com/ntwariwesley12-cpu" class="btn">
-        GitHub Profile
-    </a>
+</div>
+
+</section>
+
+<section id="skills" class="section">
+
+<div class="container">
+
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="skill">
+<p>HTML</p>
+<div class="bar"><span style="width:95%"></span></div>
+</div>
+
+<div class="skill">
+<p>CSS</p>
+<div class="bar"><span style="width:90%"></span></div>
+</div>
+
+<div class="skill">
+<p>JavaScript</p>
+<div class="bar"><span style="width:80%"></span></div>
+</div>
+
+<div class="skill">
+<p>Git & GitHub</p>
+<div class="bar"><span style="width:85%"></span></div>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects" class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Featured Projects
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Jibu Delivery Website</h3>
+<p>
+Responsive business website allowing users to browse
+products and place delivery requests.
+</p>
+<a href="#" class="btn primary-btn">View Project</a>
+</div>
+
+<div class="card">
+<h3>Museum Puzzle Game</h3>
+<p>
+Educational puzzle game helping children learn
+Rwandan history through interaction.
+</p>
+<a href="#" class="btn primary-btn">View Project</a>
+</div>
+
+<div class="card">
+<h3>Student MIS Dashboard</h3>
+<p>
+Modern dashboard interface for managing student
+records and information.
+</p>
+<a href="#" class="btn primary-btn">View Project</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="section">
+
+<div class="container">
+
+<h2 class="section-title">Contact Me</h2>
+
+<form class="contact-form">
+
+<input
+type="text"
+placeholder="Your Name"
+required
+>
+
+<input
+type="email"
+placeholder="Your Email"
+required
+>
+
+<textarea
+rows="5"
+placeholder="Your Message"
+required>
+</textarea>
+
+<button class="btn primary-btn">
+Send Message
+</button>
+
+</form>
+
+<div class="socials">
+
+<a href="https://github.com/ntwariwesley12-cpu">
+GitHub
+</a>
+
+<a href="#">
+LinkedIn
+</a>
+
+<a href="#">
+Instagram
+</a>
+
+</div>
+
+</div>
 
 </section>
 
 <footer>
 
-    <h3>Wesley Ntwari</h3>
+<h3>Wesley Ntwari</h3>
 
-    <p>Frontend Web Developer</p>
+<p>Frontend Developer</p>
 
-    <p>© 2026 All Rights Reserved</p>
+<p>© 2026 All Rights Reserved.</p>
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
